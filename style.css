@@ -31,10 +31,16 @@ h1, h2 {
 }
 
 body {
-  background: black;
+  background: #212121;
 }
 
 img {
   width: 600px;
   border-radius: 20px;
+}
+
+img.profile {
+  border-radius: 0px;
+  display: block;
+  margin: 0 auto;
 }
