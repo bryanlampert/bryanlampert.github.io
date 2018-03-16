@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
-    <script src="https://ssense.github.io/vue-carousel/js/vue-carousel.min.js"></script>
+    <script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -11,7 +11,83 @@
   <body>
     <img src="images/profile.png" class="profile">
     <h1>LHL Projects</h1>
-    <div id="app"></div>
+
+    <div id="carousel">
+      <carousel-3d :autoplay="true"
+        :autoplayTimeout="3500"
+        :autoplayHoverPause="true"
+        :perspective=50
+        :loop="true"
+        :width=540
+        :height=405
+        :controls-visible="true">
+        <slide :index="0">
+          <img src="https://raw.githubusercontent.com/bryanlampert/toronto-adventure/dev/docs/level01-2.png">
+          <a href="https://github.com/bryanlampert/toronto-adventure">
+            <span class="title">Toronto Adventure</span>
+          </a>
+          <p>
+            Final Project <br>
+            2D Sidescrolling Game <br>
+            Tech: [Phaser, Javascript, Heroku]
+          </p>
+        </slide>
+        <slide :index="1">
+          <img src="https://raw.githubusercontent.com/bryanlampert/jungle-rails/master/docs/cart.png">
+          <a href="https://github.com/bryanlampert/jungle-rails">
+            <span class="title">Jungle</span>
+          </a>
+          <p>
+            Ecommerce Shopping Site <br>
+            Tech: [Ruby on Rails] <br>
+            Testing: [Rspec]
+          </p>
+        </slide>
+        <slide :index="2">
+          <img src="https://raw.githubusercontent.com/bryanlampert/chatty-app/master/docs/Chat%20Screenshot.png">
+          <a href="https://github.com/bryanlampert/chatty-app">
+            <span class="title">Chatty</span>
+          </a>
+          <p>
+            Single Page Chat Application <br>
+            Online via websockets <br>
+            Tech: [React.JS, Node.js, Babel, Webpack, Websockets, SASS]
+          </p>
+        </slide>
+        <slide :index="3">
+          <img src="https://raw.githubusercontent.com/mandysGit/LHL-midterm/master/docs/filter-resource.png">
+          <a href="https://github.com/mandysGit/LHL-midterm">
+            <span class="title">My Personal Syllabus</span>
+          </a>
+          <p>
+            Midterm Group Project <br>
+            Pinterest like website for 'pinning' learning resources <br>
+            Tech: [Node.JS, Express, EJS, Knex, PostgreSQL, SASS]
+          </p>
+        </slide>
+        <slide :index="4">
+          <img src="https://raw.githubusercontent.com/bryanlampert/tweeter/master/docs/main-page.png">
+          <a href="https://github.com/bryanlampert/tweeter">
+            <span class="title">Tweeter</span>
+          </a>
+          <p>
+            Single Page Twitter Application <br>
+            Using AJAX and JQuery <br>
+            Tech: [Node.JS, Express, MongoDB, SASS]
+          </p>
+        </slide>
+        <slide :index="5">
+          <img src="https://raw.githubusercontent.com/bryanlampert/tinyApp/master/docs/URLs-List-Page.png">
+          <a href="https://github.com/bryanlampert/tinyApp">
+            <span class="title">TinyApp</span>
+          </a>
+          <p>
+            RESTful URL Shortening <br>
+            Bootstrap for styling <br>
+            Tech: [Node.JS, Express, EJS]
+          </p>
+        </slide>
+      </carousel-3d>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
