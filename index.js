@@ -8,12 +8,12 @@ new Vue({
               <carousel :autoplay="true"
                 :autoplayHoverPause="true"
                 :autoplayTimeout=4000
+                :loop="true"
                 :perPage=1
-                :loop=true
                 :navigationEnabled="true"
                 :paginationEnabled="true"
                 paginationActiveColor="#42b983"
-                paginationColor="#b2ebd1"
+                paginationColor="#fff"
                 easing="linear"
                 :paginationSize=20>
                 <slide>

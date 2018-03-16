@@ -12,6 +12,30 @@ h1, h2 {
   min-height: 400px;
 }
 
+.VueCarousel {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.VueCarousel-navigation-button[data-v-7fed18e9] {
+  color: #42b983;
+}
+
+.VueCarousel-navigation-prev {
+  text-shadow: -1px 1px 0 #fff;
+}
+
+.VueCarousel-navigation-next {
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.VueCarousel-dot-inner {
+  box-shadow: 1px 1px 0 #42b983;
+}
+.VueCarousel-dot-inner.active {
+  box-shadow: 1px 1px 0 #fff;
+}
+
 .label {
   position: absolute;
   background: rgb(220, 220, 220, 0.5);
