@@ -1,8 +1,14 @@
-h1, h2 {
+h1 {
   color: #fff;
   text-align: center;
   text-decoration: underline #42b983;
 }
+
+h5 {
+  color: #fff;
+  text-align: center;
+}
+
 .carousel-3d-slide[data-v-c06c963c] {
   border-radius: 5%;
   border: 0.5rem solid #42b983;
