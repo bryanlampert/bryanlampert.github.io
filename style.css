@@ -76,11 +76,9 @@ body {
   margin: 0 2rem 3rem 2rem;
 }
 
-img {
-  width: 50%;
-}
-
 img.profile {
+  width: 85%;
+  max-width: 850px;
   display: block;
   margin: 0 auto;
 }
